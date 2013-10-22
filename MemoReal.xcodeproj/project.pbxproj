@@ -136,7 +136,6 @@
 		BA7FB4B917D59C5600FA0259 /* location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7FB4B817D59C5500FA0259 /* location@2x.png */; };
 		BA7FB4BB17D59C8600FA0259 /* today.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7FB4BA17D59C8600FA0259 /* today.png */; };
 		BA7FB4BF17D5A2C200FA0259 /* plusCorner.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7FB4BE17D5A2C200FA0259 /* plusCorner.png */; };
-		BA9ED08317CEBBBA0045B737 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9ECF6717CEBBB90045B737 /* FacebookSDK.framework */; };
 		BA9ED1C117D0125B0045B737 /* ARLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9ED1C017D0125A0045B737 /* ARLocation.m */; };
 		BA9ED1C517D037D00045B737 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9ED1C417D037CF0045B737 /* Social.framework */; };
 		BA9ED1D117D054CB0045B737 /* pins.png in Resources */ = {isa = PBXBuildFile; fileRef = BA9ED1D017D054CB0045B737 /* pins.png */; };
@@ -339,7 +338,6 @@
 		BA7FB4B817D59C5500FA0259 /* location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location@2x.png"; sourceTree = "<group>"; };
 		BA7FB4BA17D59C8600FA0259 /* today.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = today.png; sourceTree = "<group>"; };
 		BA7FB4BE17D5A2C200FA0259 /* plusCorner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plusCorner.png; sourceTree = "<group>"; };
-		BA9ECF6717CEBBB90045B737 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		BA9ED1BF17D0125A0045B737 /* ARLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLocation.h; sourceTree = "<group>"; };
 		BA9ED1C017D0125A0045B737 /* ARLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARLocation.m; sourceTree = "<group>"; };
 		BA9ED1C417D037CF0045B737 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -354,7 +352,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA9ED1C517D037D00045B737 /* Social.framework in Frameworks */,
-				BA9ED08317CEBBBA0045B737 /* FacebookSDK.framework in Frameworks */,
 				BA33D1B517C9A08300F9BF77 /* CoreText.framework in Frameworks */,
 				BA33D1B317C9A07200F9BF77 /* MessageUI.framework in Frameworks */,
 				BA00FA5C17C6B84D00C2459E /* Accelerate.framework in Frameworks */,
@@ -501,7 +498,6 @@
 			isa = PBXGroup;
 			children = (
 				BA9ED1C417D037CF0045B737 /* Social.framework */,
-				BA9ECF6617CEBBB90045B737 /* FacebookSDK */,
 				BA33D1B417C9A08300F9BF77 /* CoreText.framework */,
 				BA33D1B217C9A07200F9BF77 /* MessageUI.framework */,
 				BA00FA5B17C6B84D00C2459E /* Accelerate.framework */,
@@ -754,14 +750,6 @@
 				BA0BCC9217C4360F0006F945 /* AR */,
 			);
 			path = PRAugmentedReality;
-			sourceTree = "<group>";
-		};
-		BA9ECF6617CEBBB90045B737 /* FacebookSDK */ = {
-			isa = PBXGroup;
-			children = (
-				BA9ECF6717CEBBB90045B737 /* FacebookSDK.framework */,
-			);
-			path = FacebookSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

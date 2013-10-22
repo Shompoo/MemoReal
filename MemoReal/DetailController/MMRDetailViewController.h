@@ -10,7 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
-#import <FacebookSDK/FacebookSDK.h>
+//#import <FacebookSDK/FacebookSDK.h>
 #import <Social/Social.h>
 #import "RNGridMenu.h"
 
@@ -20,7 +20,7 @@
 
 @interface MMRDetailViewController : UIViewController <UICollectionViewDelegate,
         UICollectionViewDataSource, UITextViewDelegate, MFMailComposeViewControllerDelegate,
-    RNGridMenuDelegate, FBLoginViewDelegate>
+    RNGridMenuDelegate> 
 
 {
     
