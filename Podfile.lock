@@ -1,0 +1,10 @@
+PODS:
+  - NVSlideMenuController (1.5.3)
+
+DEPENDENCIES:
+  - NVSlideMenuController (~> 1.5.1)
+
+SPEC CHECKSUMS:
+  NVSlideMenuController: 0de6f6312377582a6ce7c14f59d582d152fcd05a
+
+COCOAPODS: 0.18.1

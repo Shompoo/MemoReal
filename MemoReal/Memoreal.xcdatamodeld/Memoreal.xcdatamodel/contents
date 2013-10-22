@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Addresses" representedClassName="Addresses" syncable="YES">
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="county" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="street" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="place" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="Places" inverseName="address" inverseEntity="Places" syncable="YES"/>
+    </entity>
+    <entity name="Images" representedClassName="Images" syncable="YES">
+        <attribute name="imgid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgTag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="memo" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Memos" inverseName="images" inverseEntity="Memos" syncable="YES"/>
+    </entity>
+    <entity name="Locations" representedClassName="Locations" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" syncable="YES"/>
+        <attribute name="locid" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="place" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="Places" inverseName="loc" inverseEntity="Places" syncable="YES"/>
+    </entity>
+    <entity name="Memos" representedClassName="Memos" syncable="YES">
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="locid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeAdded" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Images" inverseName="memo" inverseEntity="Images" syncable="YES"/>
+        <relationship name="place" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Places" inverseName="memos" inverseEntity="Places" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Tags" inverseName="memos" inverseEntity="Tags" syncable="YES"/>
+    </entity>
+    <entity name="Places" representedClassName="Places" syncable="YES">
+        <attribute name="locid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="address" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="Addresses" inverseName="place" inverseEntity="Addresses" syncable="YES"/>
+        <relationship name="loc" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="Locations" inverseName="place" inverseEntity="Locations" syncable="YES"/>
+        <relationship name="memos" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Memos" inverseName="place" inverseEntity="Memos" syncable="YES"/>
+    </entity>
+    <entity name="Tags" representedClassName="Tags" syncable="YES">
+        <attribute name="tagKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tagName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="memos" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Memos" inverseName="tags" inverseEntity="Memos" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Addresses" positionX="-3186" positionY="-595" width="128" height="118"/>
+        <element name="Images" positionX="-2990" positionY="-522" width="128" height="103"/>
+        <element name="Locations" positionX="-3555" positionY="-406" width="128" height="118"/>
+        <element name="Memos" positionX="-3188" positionY="-409" width="128" height="148"/>
+        <element name="Places" positionX="-3368" positionY="-432" width="128" height="148"/>
+        <element name="Tags" positionX="-2988" positionY="-337" width="128" height="88"/>
+    </elements>
+</model>
