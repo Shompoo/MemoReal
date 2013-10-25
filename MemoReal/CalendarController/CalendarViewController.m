@@ -137,8 +137,12 @@
 #pragma mark - Vurig calendar delegate
 
 -(void)calendarView:(VRGCalendarView *)calendarView switchedToMonth:(int)month targetHeight:(float)targetHeight animated:(BOOL)animated {
-    if (month==[[NSDate date] month]) {
-        
+   
+    
+    NSDateComponents *comp = [[NSCalendar currentCalendar] components:NSWeekdayCalendarUnit fromDate:[NSDate date]];
+    
+    
+    if (month==[comp month]) {
               
         eventArray = [[NSMutableArray alloc] init];
         NSMutableArray *muColors = [[NSMutableArray alloc] init];

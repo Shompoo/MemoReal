@@ -120,7 +120,6 @@
 		BA6F249A17BFB414003FFE38 /* a1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA6F249717BFB414003FFE38 /* a1@2x.png */; };
 		BA6F249B17BFB414003FFE38 /* a2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA6F249817BFB414003FFE38 /* a2@2x.png */; };
 		BA6F249E17BFD110003FFE38 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6F249D17BFD110003FFE38 /* AVFoundation.framework */; };
-		BA6F25D217C0DFA9003FFE38 /* Pods.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BA6F25D117C0DFA9003FFE38 /* Pods.xcconfig */; };
 		BA7FB49D17D5860B00FA0259 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7FB49C17D5860B00FA0259 /* Default.png */; };
 		BA7FB49F17D5861600FA0259 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7FB49E17D5861600FA0259 /* Default@2x.png */; };
 		BA7FB4A117D5863900FA0259 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7FB4A017D5863900FA0259 /* Default-568h@2x.png */; };
@@ -781,7 +780,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MemoReal;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Treechot Shompoonut";
 			};
 			buildConfigurationList = BA6F239817BF93D5003FFE38 /* Build configuration list for PBXProject "MemoReal" */;
@@ -837,7 +836,6 @@
 				BA6F249917BFB414003FFE38 /* a0@2x.png in Resources */,
 				BA6F249A17BFB414003FFE38 /* a1@2x.png in Resources */,
 				BA6F249B17BFB414003FFE38 /* a2@2x.png in Resources */,
-				BA6F25D217C0DFA9003FFE38 /* Pods.xcconfig in Resources */,
 				BA37106617C20BB0001354ED /* menubg.png in Resources */,
 				BA37106717C20BB0001354ED /* menubg@2x.png in Resources */,
 				BA37106917C20BB0001354ED /* MenuCell.xib in Resources */,
@@ -1052,10 +1050,7 @@
 			baseConfigurationReference = BA6F25D117C0DFA9003FFE38 /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Shompoonut Treechot (V9G2JM7S4V)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/FacebookSDK\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MemoReal/MemoReal-Prefix.pch";
 				INFOPLIST_FILE = "MemoReal/MemoReal-Info.plist";
@@ -1071,10 +1066,7 @@
 			baseConfigurationReference = BA6F25D117C0DFA9003FFE38 /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Shompoonut Treechot (V9G2JM7S4V)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/FacebookSDK\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MemoReal/MemoReal-Prefix.pch";
 				INFOPLIST_FILE = "MemoReal/MemoReal-Info.plist";
