@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D9F9727F-84B6-438F-98D1-C6F80ADE288F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MemoReal</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FF3E300F-EE59-4A80-9E28-777AAD930D3A</key>
+		<string>https://github.com/Shompoo/MemoReal.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MemoReal.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FF3E300F-EE59-4A80-9E28-777AAD930D3A</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Shompoo/MemoReal.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FF3E300F-EE59-4A80-9E28-777AAD930D3A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FF3E300F-EE59-4A80-9E28-777AAD930D3A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MemoReal</string>
+		</dict>
+	</array>
+</dict>
+</plist>
